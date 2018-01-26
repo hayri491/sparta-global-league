@@ -1,0 +1,32 @@
+
+.fa-caret-down {
+  color: red;
+}
+
+
+.fa-caret-up {
+  color: green;
+}
+
+/* First two should be green ( or a colour that shows it's good ) */
+tr.contestant:nth-child(1),
+tr.contestant:nth-child(2) {
+  background-color: #9aeda7;
+}
+
+
+/* Next four should be orange ( or average colour ) */
+tr.contestant:nth-child(3),
+tr.contestant:nth-child(4),
+tr.contestant:nth-child(5),
+tr.contestant:nth-child(6) {
+  background-color: #f1f442;
+}
+
+
+/* last two should be red ( or a bad colour ) */
+tr.contestant:nth-last-child(1),
+tr.contestant:nth-last-child(2),
+tr.contestant:nth-last-child(3) {
+  background-color: #ff8484;
+}

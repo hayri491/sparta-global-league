@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>League</title>
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="iNVA2/tCzF33+UMVeByUv29Hhf6jvV+m3wuwSOmnVJVXASGNHytgBc5YuBS3Isd+sS2+EwXM9/sjXTQf6XGHcQ==" />
+
+    <link rel="stylesheet" media="all" href="assets/application.self-e2b0ccb55caa03b514f6020915d80061acbd53fbe50a993f4d75d13f9e25292c.css" data-turbolinks-track="reload" />
+    <script src="assets/rails-ujs.self-817d9a8cb641f7125060cb18fefada3f35339170767c4e003105f92d4c204e39.js" data-turbolinks-track="reload"></script>
+<script src="assets/turbolinks.self-2db6ec539b9190f75e1d477b305df53d12904d5cafdd47c7ffd91ba25cbec128.js" data-turbolinks-track="reload"></script>
+<script src="assets/action_cable.self-69fddfcddf4fdef9828648f9330d6ce108b93b82b0b8d3affffc59a114853451.js" data-turbolinks-track="reload"></script>
+<script src="assets/cable.self-8484513823f404ed0c0f039f75243bfdede7af7919dda65f2e66391252443ce9.js" data-turbolinks-track="reload"></script>
+<script src="assets/contestants.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js" data-turbolinks-track="reload"></script>
+<script src="assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js" data-turbolinks-track="reload"></script>
+<script src="assets/bootstrap.self-b38817c3e3a3049abb1fc08dd6ae448b23330f8453226efdb074710209474f75.js" data-turbolinks-track="reload"></script>
+<script src="assets/application.self-12be097b9a2442b0b6cdcb5146d1d63c00abcde3675ff34d1de6126cb13e6714.js" data-turbolinks-track="reload"></script>
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/custom.css">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html#">Sparta League</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+              <li><a href="users/sign_in">Login</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    <div class="container-fluid">
+      <div class="row">
+  <div class="col-md-12">
+    <p id="notice"></p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <table class="table">
+      <thead>
+        <tr>
+          <th></th>
+          <th>Name</th>
+          <th class="text-center">Deals</th>
+          <th class="text-center">Meetings</th>
+          <th class="text-center">Points</th>
+        </tr>
+      </thead>
+
+      <tbody>
+          <tr class="contestant">
+
+              <td><i class="fas fa-caret-up"></i></td>
+              <td>Bob Smith</td>
+            <td class="text-center">50</td>
+            <td class="text-center">34</td>
+            <td class="text-center">184</td>
+          </tr>
+          <tr class="contestant">
+
+              <td><i class="fas fa-caret-down"></i></td>
+              <td>Stephen Reid</td>
+            <td class="text-center">50</td>
+            <td class="text-center">0</td>
+            <td class="text-center">150</td>
+          </tr>
+          <tr class="contestant">
+
+              <td><i class="fas fa-caret-up"></i></td>
+              <td>Tony Smith</td>
+            <td class="text-center">40</td>
+            <td class="text-center">23</td>
+            <td class="text-center">143</td>
+          </tr>
+          <tr class="contestant">
+
+              <td><i class="fas fa-caret-down"></i></td>
+              <td>Chris Brown</td>
+            <td class="text-center">40</td>
+            <td class="text-center">0</td>
+            <td class="text-center">120</td>
+          </tr>
+          <tr class="contestant">
+
+              <td><i class="fas fa-caret-up"></i></td>
+              <td>Tim McCarthy</td>
+            <td class="text-center">10</td>
+            <td class="text-center">5</td>
+            <td class="text-center">35</td>
+          </tr>
+          <tr class="contestant">
+
+              <td><i class="fas fa-caret-down"></i></td>
+              <td>Chris White</td>
+            <td class="text-center">0</td>
+            <td class="text-center">0</td>
+            <td class="text-center">0</td>
+          </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<script>
+  $(document).on('ready page:load', function() {
+      var REFRESH_INTERVAL_IN_MILLIS = 50000;
+
+         setInterval(function(){
+            Turbolinks.visit(location.toString());
+            console.log('refreshing');
+         }, REFRESH_INTERVAL_IN_MILLIS);
+
+  });
+</script>
+
+
+    </div>
+  </body>
+</html>
